@@ -12,7 +12,6 @@ plaintext: HELLO
 ciphertext: EHBBQ
 
 */
-
 int main(int argc, string argv[])
 {
 
