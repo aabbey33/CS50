@@ -1,4 +1,21 @@
 {
     "C_Cpp.default.compilerPath": "/usr/bin/clang",
-    "makefile.compileCommandsPath": ".vscode/compile_commands.json"
+    "makefile.compileCommandsPath": ".vscode/compile_commands.json",
+    "makefile.configurations": [
+        {
+            "name": "clangtest",
+            "problemMatchers": [
+                "$gcc",
+                "$msvc"
+            ],
+            "makeArgs": ["CC=clang","CFLAGS = -ferror-limit=1 -gdwarf-4 -ggdb3 -O0 -std=c11 -Wall -Werror -Wextra -Wno-gnu-folding-constant -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wno-unused-but-set-variable -Wshadow","LDLIBS = -lcrypt -lcs50 -lm"]
+        }
+    ],
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "stdlib.h": "c"
+    },
+    "makefile.additionalCompilerNames": [
+        "clang"
+    ]
 }
